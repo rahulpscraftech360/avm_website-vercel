@@ -57,8 +57,16 @@ export default function Dashboard() {
               </li>
             </ul>
           </div>
-          <div className=" h-64 rounded-lg flex items-center justify-center">
-            <img src={exampleImage} alt="Description of image" />
+          <div className=" h-[256px] rounded-lg flex items-center justify-center">
+            <img
+              src={exampleImage}
+              style={{
+                maxHeight: "256px",
+                maxWidth: "100%",
+                objectFit: "contain",
+              }}
+              alt="Description of image"
+            />
           </div>
         </section>
         <section className="text-center mb-16">
