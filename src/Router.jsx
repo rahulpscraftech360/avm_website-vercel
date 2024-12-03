@@ -10,6 +10,10 @@ import Privacy from "./Privacy";
 import Dashboard from "./Dashboard";
 import Contact from "./Contact";
 import NoMatch from "./NoMatch";
+import AVMLandingPage from "./avm-landing-page";
+import PreOrderPage from "./Preorder";
+import AVMLandingPage2 from "./avm-landing-page2";
+import TermsAndConditions from "./TermsAndConditions";
 
 export const router = createBrowserRouter(
   [
@@ -28,6 +32,23 @@ export const router = createBrowserRouter(
         {
           path: "/Contact",
           element: <Contact />,
+        },
+        {
+          path: "/landing",
+          element: <AVMLandingPage />,
+        },
+
+        {
+          path: "/landing2",
+          element: <AVMLandingPage2 />,
+        },
+        {
+          path: "/Waitlist",
+          element: <PreOrderPage />,
+        },
+        {
+          path: "/TermsAndConditions",
+          element: <TermsAndConditions />,
         },
         // {
         //   path: "empty",
